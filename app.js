@@ -6,7 +6,7 @@ const TOKEN = process.env.DISCORD_TOKEN;
 const FB_ACCESS_TOKEN = process.env.FB_ACCESS_TOKEN;
 const FB_PAGE_ID = "102959158396045"; 
 const GUILD_ID = process.env.DISCORD_GUILD_ID;
-const DISCORD_CHANNEL_ID = "1147097127298801694"
+const DISCORD_CHANNEL_ID = "1128296112705503252"
 const CHECK_INTERVAL = 10000; 
 
 const client = new Client({
@@ -62,7 +62,7 @@ async function sendToDiscord(post) {
     };
 
     const sentMessage = await channel.send({
-        content: ``,
+        content: `@everyone`,
         embeds: [embed]
     });
 
