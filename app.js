@@ -62,7 +62,7 @@ async function sendToDiscord(post) {
     };
 
     const sentMessage = await channel.send({
-        content: `@Facebook Updates`,
+        content: `<@&1147097892662816881>`,
         embeds: [embed]
     });
 
